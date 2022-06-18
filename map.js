@@ -48,7 +48,7 @@ area.enter = (map, mapText) => {
 
 area.out = (map, mapText) => {
    map.style.opacity = 1;
-   map.style.stroke = 'black';
+   map.style.stroke = '#646464';
    map.style.strokeWidth = 1;
    mapText.style.visibility = 'hidden';
 }
