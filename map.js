@@ -1,6 +1,17 @@
 let mapId = document.getElementById('peruMap');
 let generalMap;
-mapId.style.left = `${(window.screen.width / 2) - mapId.clientWidth}px`;
+
+console.log(mapId.clientWidth);
+console.log(mapId.clientHeight);
+
+console.log(window.innerWidth);
+console.log(window.screen.width);
+
+console.log(window.innerHeight);
+console.log(window.screen.height);
+
+mapId.style.left = `${(window.innerWidth / 2) - mapId.clientWidth}px`;
+mapId.style.top = `${(window.innerHeight / 2) - mapId.clientHeight / 2}px`;
 
 const areas = [
    { map: 'AmazonasMap', text: 'AmazonasText' },
